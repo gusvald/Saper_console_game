@@ -17,14 +17,14 @@ width(width), height(height), mode(mode), state(RUNNING)
 
     if (mode == DEBUG) {
         MineQuantity = 18;
-        for (int i = 0; i < height; i++) {
-            for (int g = 0; g < width; g++) {
+        for (int g = 0; g < height; g++) {
+            for (int i = 0; i < width; i++) {
                 if (i == g)
-                    board[i][g].hasMine = true;
-                if (i == 0)
-                    board[i][g].hasMine = true;
-                if (g == 0 && i % 2 == 0)
-                    board[i][g].hasMine = true;
+                    board[g][i].hasMine = true;
+                if (g == 0)
+                    board[g][i].hasMine = true;
+                if (i == 0 && g % 2 == 0)
+                    board[g][i].hasMine = true;
             }
         }
     }
@@ -36,8 +36,8 @@ width(width), height(height), mode(mode), state(RUNNING)
             int x, y;
             x = rand() % width;
             y = rand() % height;
-            if (!board[x][y].hasMine) {
-                board[x][y].hasMine = true;
+            if (!board[y][x].hasMine) {
+                board[y][x].hasMine = true;
                 mines = mines + 1;
             }
         }
@@ -70,9 +70,9 @@ void MinesweeperBoard::display_Field(Field field) const {
 
 void MinesweeperBoard::debug_display() const
 {
-    for (int i = 0; i < height; i++) {
-        for (int g = 0; g < width; g++) {
-            this->display_Field(board[i][g]);
+    for (int i = 0; i < width; i++) {
+        for (int g = 0; g < height; g++) {
+            this->display_Field(board[g][i]);
         }
         std::cout << std::endl;
     }
@@ -99,11 +99,11 @@ int MinesweeperBoard::getMineCount() const {
 
 int MinesweeperBoard::countMines(int x, int y) const {
     int mines = 0;
-    if (this->isRevealed(x, y) && !board[x][y].hasMine) {
+    if (this->isRevealed(x, y) && !board[y][x].hasMine) {
         for (int i = (x + 1); i > (x - 2); i--) {
             for (int g = (y + 1); g > (y - 2); g--) {
                 if (i >= 0 && g >= 0) {
-                    if (board[i][g].hasMine) {
+                    if (board[g][i].hasMine) {
                         mines += 1;
                     }
                 }
@@ -119,19 +119,19 @@ int MinesweeperBoard::countMines(int x, int y) const {
 
 bool MinesweeperBoard::isRevealed(int x, int y) const {
     if (!isOutRange(x, y)) {
-        return board[x][y].isRevealed;
+        return board[y][x].isRevealed;
     }
     return false;
 }
 
 
 bool MinesweeperBoard::hasFlag(int x, int y) const {
-    return !(this->isRevealed(x, y) || !board[x][y].hasFlag);
+    return !(this->isRevealed(x, y) || !board[y][x].hasFlag);
 }
 
 void MinesweeperBoard::toggleFlag(int x, int y) {
     if (!this->isRevealed(x, y)) {
-        board[x][y].hasFlag = true;
+        board[y][x].hasFlag = true;
         if (this->FIRSTMOVE)
             this->FIRSTMOVE = false;
     } else if (this->isRevealed(x, y) || this->state != RUNNING)
@@ -141,22 +141,22 @@ void MinesweeperBoard::toggleFlag(int x, int y) {
 void MinesweeperBoard::revealField(int x, int y) {
     if (this->isRevealed(x, y) || this->hasFlag(x, y))
         return;
-    if (!this->isRevealed(x, y) || !board[x][y].hasMine) {
-        board[x][y].isRevealed = true;
+    if (!this->isRevealed(x, y) || !board[y][x].hasMine) {
+        board[y][x].isRevealed = true;
         if (this->FIRSTMOVE)
             this->FIRSTMOVE = false;
     }
 
-    if (!this->isRevealed(x, y) || board[x][y].hasMine || !this->FIRSTMOVE) {
-        board[x][y].isRevealed = true;
+    if (!this->isRevealed(x, y) || board[y][x].hasMine || !this->FIRSTMOVE) {
+        board[y][x].isRevealed = true;
         this->state = FINISHED_LOSS;
     }
 
-    if (!this->isRevealed(x, y) || board[x][y].hasMine || this->FIRSTMOVE || mode != DEBUG) {
-        board[x][y].isRevealed = true;
-        board[x][y].hasMine = false;
+    if (!this->isRevealed(x, y) || board[y][x].hasMine || this->FIRSTMOVE || mode != DEBUG) {
+        board[y][x].isRevealed = true;
+        board[y][x].hasMine = false;
         board[rand() % width][rand() % height].hasMine = true;
-        board[x][y].isRevealed = true;
+        board[y][x].isRevealed = true;
     }
     if (this->WinCondition())
     { this-> state = FINISHED_WIN; }
@@ -174,10 +174,10 @@ bool MinesweeperBoard::WinCondition() const {
     int mines = 0;
     for (int i = 0; i < width; i++) {
         for (int g = 0; g < height; g++) {
-            if (board[i][g].hasMine && board[i][g].hasFlag) {
+            if (board[g][i].hasMine && board[g][i].hasFlag) {
                 flags++;
             }
-            if (board[i][g].hasMine && !board[i][g].isRevealed) {
+            if (board[g][i].hasMine && !board[g][i].isRevealed) {
                 mines++;
             }
 
@@ -195,19 +195,19 @@ char MinesweeperBoard::getFieldInfo(int x, int y) const {
 
     if (!isOutRange(x, y)) {
 
-    if (!board[x][y].isRevealed && board[x][y].hasFlag)
+    if (!board[y][x].isRevealed && board[y][x].hasFlag)
         return 'F';
 
-    if (!board[x][y].isRevealed && !board[x][y].hasFlag)
+    if (!board[y][x].isRevealed && !board[y][x].hasFlag)
         return '_';
 
-    if (board[x][y].isRevealed && board[x][y].hasMine)
+    if (board[y][x].isRevealed && board[y][x].hasMine)
         return 'x';
 
-    if (board[x][y].isRevealed && this->countMines(x, y) == 0)
+    if (board[y][x].isRevealed && this->countMines(x, y) == 0)
         return ' ';
 
-    if (board[x][y].isRevealed && this->countMines(x, y) != 0) {
+    if (board[y][x].isRevealed && this->countMines(x, y) != 0) {
         return countMines(x, y) + '0';
     }
 }
