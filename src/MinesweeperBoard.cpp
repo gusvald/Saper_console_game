@@ -1,7 +1,9 @@
 #include <iostream>
 #include "MinesweeperBoard.h"
 
-MinesweeperBoard::MinesweeperBoard(int width, int height, GameMode mode)  {  // zainicjuj liste startowa
+MinesweeperBoard::MinesweeperBoard(int width, int height, GameMode mode):
+width(width), height(height), mode(mode), state(RUNNING)
+{
 
     this->width = width;
     this->height = height;
@@ -66,7 +68,7 @@ void MinesweeperBoard::display_Field(Field field) const {
 }
 
 
-void MinesweeperBoard::debug_display() const // referencja na field i popraw w headearze
+void MinesweeperBoard::debug_display() const
 {
     for (int i = 0; i < height; i++) {
         for (int g = 0; g < width; g++) {
@@ -123,12 +125,8 @@ bool MinesweeperBoard::isRevealed(int x, int y) const {
 }
 
 
-bool MinesweeperBoard::hasFlag(int x, int y) const { //zamień warunki
-    if (board[x][y].hasFlag)
-        return true;
-    else if (this->isRevealed(x, y) || !board[x][y].hasFlag)
-        return false;
-    return false;
+bool MinesweeperBoard::hasFlag(int x, int y) const {
+    return !(this->isRevealed(x, y) || !board[x][y].hasFlag);
 }
 
 void MinesweeperBoard::toggleFlag(int x, int y) {
@@ -136,7 +134,7 @@ void MinesweeperBoard::toggleFlag(int x, int y) {
         board[x][y].hasFlag = true;
         if (this->FIRSTMOVE)
             this->FIRSTMOVE = false;
-    } else if (this->isRevealed(x, y) || this->state == FINISHED_LOSS || this->state == FINISHED_WIN)//=!RUNNIG
+    } else if (this->isRevealed(x, y) || this->state != RUNNING)
         return;
 }
 
@@ -160,18 +158,14 @@ void MinesweeperBoard::revealField(int x, int y) {
         board[rand() % width][rand() % height].hasMine = true;
         board[x][y].isRevealed = true;
     }
-    //win condition
+    if (this->WinCondition())
+    { this-> state = FINISHED_WIN; }
 }
 
 
-GameState MinesweeperBoard::getGameState() const { // z tego zrób getter
-    if (this->WinCondition()) { return FINISHED_WIN; }
-    else if (this->state == RUNNING)
-        return RUNNING;
-    if (this->state == FINISHED_LOSS)
-        return FINISHED_LOSS;
-    return RUNNING;
-
+GameState MinesweeperBoard::getGameState() const
+{
+    return this->state;
 }
 
 
@@ -195,9 +189,11 @@ bool MinesweeperBoard::WinCondition() const {
 }
 
 
-char MinesweeperBoard::getFieldInfo(int x, int y) const { // do przebudowania w ifa wszystko w out of range potem zwroc #
-    if (x < 0 || y < 0 || x >= width || y >= height)
-        return '#';
+char MinesweeperBoard::getFieldInfo(int x, int y) const { 
+
+
+
+    if (!isOutRange(x, y)) {
 
     if (!board[x][y].isRevealed && board[x][y].hasFlag)
         return 'F';
@@ -214,6 +210,7 @@ char MinesweeperBoard::getFieldInfo(int x, int y) const { // do przebudowania w 
     if (board[x][y].isRevealed && this->countMines(x, y) != 0) {
         return countMines(x, y) + '0';
     }
-    return '0';
+}
+    return '#';
 }
 
