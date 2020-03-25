@@ -1,15 +1,15 @@
 
-if(NOT "C:/Users/48660/CLionProjects/Saper/cmake-build-debug/tests/googletest-download/googletest-prefix/src/googletest-stamp/googletest-gitinfo.txt" IS_NEWER_THAN "C:/Users/48660/CLionProjects/Saper/cmake-build-debug/tests/googletest-download/googletest-prefix/src/googletest-stamp/googletest-gitclone-lastrun.txt")
-  message(STATUS "Avoiding repeated git clone, stamp file is up to date: 'C:/Users/48660/CLionProjects/Saper/cmake-build-debug/tests/googletest-download/googletest-prefix/src/googletest-stamp/googletest-gitclone-lastrun.txt'")
+if(NOT "C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/cmake-build-debug/tests/googletest-download/googletest-prefix/src/googletest-stamp/googletest-gitinfo.txt" IS_NEWER_THAN "C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/cmake-build-debug/tests/googletest-download/googletest-prefix/src/googletest-stamp/googletest-gitclone-lastrun.txt")
+  message(STATUS "Avoiding repeated git clone, stamp file is up to date: 'C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/cmake-build-debug/tests/googletest-download/googletest-prefix/src/googletest-stamp/googletest-gitclone-lastrun.txt'")
   return()
 endif()
 
 execute_process(
-  COMMAND ${CMAKE_COMMAND} -E remove_directory "C:/Users/48660/CLionProjects/Saper/cmake-build-debug/tests/googletest-src"
+  COMMAND ${CMAKE_COMMAND} -E remove_directory "C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/cmake-build-debug/tests/googletest-src"
   RESULT_VARIABLE error_code
   )
 if(error_code)
-  message(FATAL_ERROR "Failed to remove directory: 'C:/Users/48660/CLionProjects/Saper/cmake-build-debug/tests/googletest-src'")
+  message(FATAL_ERROR "Failed to remove directory: 'C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/cmake-build-debug/tests/googletest-src'")
 endif()
 
 # try the clone 3 times in case there is an odd git clone issue
@@ -18,7 +18,7 @@ set(number_of_tries 0)
 while(error_code AND number_of_tries LESS 3)
   execute_process(
     COMMAND "C:/Program Files/Git/cmd/git.exe"  clone  "https://github.com/google/googletest.git" "googletest-src"
-    WORKING_DIRECTORY "C:/Users/48660/CLionProjects/Saper/cmake-build-debug/tests"
+    WORKING_DIRECTORY "C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/cmake-build-debug/tests"
     RESULT_VARIABLE error_code
     )
   math(EXPR number_of_tries "${number_of_tries} + 1")
@@ -33,7 +33,7 @@ endif()
 
 execute_process(
   COMMAND "C:/Program Files/Git/cmd/git.exe"  checkout master --
-  WORKING_DIRECTORY "C:/Users/48660/CLionProjects/Saper/cmake-build-debug/tests/googletest-src"
+  WORKING_DIRECTORY "C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/cmake-build-debug/tests/googletest-src"
   RESULT_VARIABLE error_code
   )
 if(error_code)
@@ -42,22 +42,22 @@ endif()
 
 execute_process(
   COMMAND "C:/Program Files/Git/cmd/git.exe"  submodule update --recursive --init 
-  WORKING_DIRECTORY "C:/Users/48660/CLionProjects/Saper/cmake-build-debug/tests/googletest-src"
+  WORKING_DIRECTORY "C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/cmake-build-debug/tests/googletest-src"
   RESULT_VARIABLE error_code
   )
 if(error_code)
-  message(FATAL_ERROR "Failed to update submodules in: 'C:/Users/48660/CLionProjects/Saper/cmake-build-debug/tests/googletest-src'")
+  message(FATAL_ERROR "Failed to update submodules in: 'C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/cmake-build-debug/tests/googletest-src'")
 endif()
 
 # Complete success, update the script-last-run stamp file:
 #
 execute_process(
   COMMAND ${CMAKE_COMMAND} -E copy
-    "C:/Users/48660/CLionProjects/Saper/cmake-build-debug/tests/googletest-download/googletest-prefix/src/googletest-stamp/googletest-gitinfo.txt"
-    "C:/Users/48660/CLionProjects/Saper/cmake-build-debug/tests/googletest-download/googletest-prefix/src/googletest-stamp/googletest-gitclone-lastrun.txt"
+    "C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/cmake-build-debug/tests/googletest-download/googletest-prefix/src/googletest-stamp/googletest-gitinfo.txt"
+    "C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/cmake-build-debug/tests/googletest-download/googletest-prefix/src/googletest-stamp/googletest-gitclone-lastrun.txt"
   RESULT_VARIABLE error_code
   )
 if(error_code)
-  message(FATAL_ERROR "Failed to copy script-last-run stamp file: 'C:/Users/48660/CLionProjects/Saper/cmake-build-debug/tests/googletest-download/googletest-prefix/src/googletest-stamp/googletest-gitclone-lastrun.txt'")
+  message(FATAL_ERROR "Failed to copy script-last-run stamp file: 'C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/cmake-build-debug/tests/googletest-download/googletest-prefix/src/googletest-stamp/googletest-gitclone-lastrun.txt'")
 endif()
 

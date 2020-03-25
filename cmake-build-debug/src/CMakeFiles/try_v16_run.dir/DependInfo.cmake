@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/48660/CLionProjects/Saper/src/MinesweeperBoard.cpp" "C:/Users/48660/CLionProjects/Saper/cmake-build-debug/src/CMakeFiles/try_v16_run.dir/MinesweeperBoard.cpp.obj"
-  "C:/Users/48660/CLionProjects/Saper/src/main.cpp" "C:/Users/48660/CLionProjects/Saper/cmake-build-debug/src/CMakeFiles/try_v16_run.dir/main.cpp.obj"
+  "C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/src/MinesweeperBoard.cpp" "C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/cmake-build-debug/src/CMakeFiles/try_v16_run.dir/MinesweeperBoard.cpp.obj"
+  "C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/src/main.cpp" "C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/cmake-build-debug/src/CMakeFiles/try_v16_run.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/48660/CLionProjects/Saper/tests/board_unittest.cpp" "C:/Users/48660/CLionProjects/Saper/cmake-build-debug/tests/CMakeFiles/try_v16_test.dir/board_unittest.cpp.obj"
-  "C:/Users/48660/CLionProjects/Saper/tests/main.cpp" "C:/Users/48660/CLionProjects/Saper/cmake-build-debug/tests/CMakeFiles/try_v16_test.dir/main.cpp.obj"
+  "C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/tests/board_unittest.cpp" "C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/cmake-build-debug/tests/CMakeFiles/try_v16_test.dir/board_unittest.cpp.obj"
+  "C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/tests/main.cpp" "C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/cmake-build-debug/tests/CMakeFiles/try_v16_test.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -18,8 +18,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "C:/Users/48660/CLionProjects/Saper/cmake-build-debug/src/CMakeFiles/try_v16_lib.dir/DependInfo.cmake"
-  "C:/Users/48660/CLionProjects/Saper/cmake-build-debug/tests/googletest-build/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
+  "C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/cmake-build-debug/src/CMakeFiles/try_v16_lib.dir/DependInfo.cmake"
+  "C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/cmake-build-debug/tests/googletest-build/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

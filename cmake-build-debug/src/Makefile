@@ -47,10 +47,10 @@ RM = "C:\Program Files\JetBrains\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\48660\CLionProjects\Saper
+CMAKE_SOURCE_DIR = C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\48660\CLionProjects\Saper\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -125,14 +125,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\Users\48660\CLionProjects\Saper\cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\48660\CLionProjects\Saper\cmake-build-debug\CMakeFiles C:\Users\48660\CLionProjects\Saper\cmake-build-debug\src\CMakeFiles\progress.marks
-	cd /d C:\Users\48660\CLionProjects\Saper\cmake-build-debug && $(MAKE) -f CMakeFiles\Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\48660\CLionProjects\Saper\cmake-build-debug\CMakeFiles 0
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug\CMakeFiles C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug\src\CMakeFiles\progress.marks
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug && $(MAKE) -f CMakeFiles\Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d C:\Users\48660\CLionProjects\Saper\cmake-build-debug && $(MAKE) -f CMakeFiles\Makefile2 src/clean
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug && $(MAKE) -f CMakeFiles\Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -142,22 +142,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\Users\48660\CLionProjects\Saper\cmake-build-debug && $(MAKE) -f CMakeFiles\Makefile2 src/preinstall
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug && $(MAKE) -f CMakeFiles\Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\Users\48660\CLionProjects\Saper\cmake-build-debug && $(MAKE) -f CMakeFiles\Makefile2 src/preinstall
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug && $(MAKE) -f CMakeFiles\Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\Users\48660\CLionProjects\Saper\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/try_v16_run.dir/rule:
-	cd /d C:\Users\48660\CLionProjects\Saper\cmake-build-debug && $(MAKE) -f CMakeFiles\Makefile2 src/CMakeFiles/try_v16_run.dir/rule
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug && $(MAKE) -f CMakeFiles\Makefile2 src/CMakeFiles/try_v16_run.dir/rule
 .PHONY : src/CMakeFiles/try_v16_run.dir/rule
 
 # Convenience name for target.
@@ -167,12 +167,12 @@ try_v16_run: src/CMakeFiles/try_v16_run.dir/rule
 
 # fast build rule for target.
 try_v16_run/fast:
-	cd /d C:\Users\48660\CLionProjects\Saper\cmake-build-debug && $(MAKE) -f src\CMakeFiles\try_v16_run.dir\build.make src/CMakeFiles/try_v16_run.dir/build
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug && $(MAKE) -f src\CMakeFiles\try_v16_run.dir\build.make src/CMakeFiles/try_v16_run.dir/build
 .PHONY : try_v16_run/fast
 
 # Convenience name for target.
 src/CMakeFiles/try_v16_lib.dir/rule:
-	cd /d C:\Users\48660\CLionProjects\Saper\cmake-build-debug && $(MAKE) -f CMakeFiles\Makefile2 src/CMakeFiles/try_v16_lib.dir/rule
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug && $(MAKE) -f CMakeFiles\Makefile2 src/CMakeFiles/try_v16_lib.dir/rule
 .PHONY : src/CMakeFiles/try_v16_lib.dir/rule
 
 # Convenience name for target.
@@ -182,7 +182,7 @@ try_v16_lib: src/CMakeFiles/try_v16_lib.dir/rule
 
 # fast build rule for target.
 try_v16_lib/fast:
-	cd /d C:\Users\48660\CLionProjects\Saper\cmake-build-debug && $(MAKE) -f src\CMakeFiles\try_v16_lib.dir\build.make src/CMakeFiles/try_v16_lib.dir/build
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug && $(MAKE) -f src\CMakeFiles\try_v16_lib.dir\build.make src/CMakeFiles/try_v16_lib.dir/build
 .PHONY : try_v16_lib/fast
 
 MinesweeperBoard.obj: MinesweeperBoard.cpp.obj
@@ -191,8 +191,8 @@ MinesweeperBoard.obj: MinesweeperBoard.cpp.obj
 
 # target to build an object file
 MinesweeperBoard.cpp.obj:
-	cd /d C:\Users\48660\CLionProjects\Saper\cmake-build-debug && $(MAKE) -f src\CMakeFiles\try_v16_run.dir\build.make src/CMakeFiles/try_v16_run.dir/MinesweeperBoard.cpp.obj
-	cd /d C:\Users\48660\CLionProjects\Saper\cmake-build-debug && $(MAKE) -f src\CMakeFiles\try_v16_lib.dir\build.make src/CMakeFiles/try_v16_lib.dir/MinesweeperBoard.cpp.obj
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug && $(MAKE) -f src\CMakeFiles\try_v16_run.dir\build.make src/CMakeFiles/try_v16_run.dir/MinesweeperBoard.cpp.obj
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug && $(MAKE) -f src\CMakeFiles\try_v16_lib.dir\build.make src/CMakeFiles/try_v16_lib.dir/MinesweeperBoard.cpp.obj
 .PHONY : MinesweeperBoard.cpp.obj
 
 MinesweeperBoard.i: MinesweeperBoard.cpp.i
@@ -201,8 +201,8 @@ MinesweeperBoard.i: MinesweeperBoard.cpp.i
 
 # target to preprocess a source file
 MinesweeperBoard.cpp.i:
-	cd /d C:\Users\48660\CLionProjects\Saper\cmake-build-debug && $(MAKE) -f src\CMakeFiles\try_v16_run.dir\build.make src/CMakeFiles/try_v16_run.dir/MinesweeperBoard.cpp.i
-	cd /d C:\Users\48660\CLionProjects\Saper\cmake-build-debug && $(MAKE) -f src\CMakeFiles\try_v16_lib.dir\build.make src/CMakeFiles/try_v16_lib.dir/MinesweeperBoard.cpp.i
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug && $(MAKE) -f src\CMakeFiles\try_v16_run.dir\build.make src/CMakeFiles/try_v16_run.dir/MinesweeperBoard.cpp.i
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug && $(MAKE) -f src\CMakeFiles\try_v16_lib.dir\build.make src/CMakeFiles/try_v16_lib.dir/MinesweeperBoard.cpp.i
 .PHONY : MinesweeperBoard.cpp.i
 
 MinesweeperBoard.s: MinesweeperBoard.cpp.s
@@ -211,8 +211,8 @@ MinesweeperBoard.s: MinesweeperBoard.cpp.s
 
 # target to generate assembly for a file
 MinesweeperBoard.cpp.s:
-	cd /d C:\Users\48660\CLionProjects\Saper\cmake-build-debug && $(MAKE) -f src\CMakeFiles\try_v16_run.dir\build.make src/CMakeFiles/try_v16_run.dir/MinesweeperBoard.cpp.s
-	cd /d C:\Users\48660\CLionProjects\Saper\cmake-build-debug && $(MAKE) -f src\CMakeFiles\try_v16_lib.dir\build.make src/CMakeFiles/try_v16_lib.dir/MinesweeperBoard.cpp.s
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug && $(MAKE) -f src\CMakeFiles\try_v16_run.dir\build.make src/CMakeFiles/try_v16_run.dir/MinesweeperBoard.cpp.s
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug && $(MAKE) -f src\CMakeFiles\try_v16_lib.dir\build.make src/CMakeFiles/try_v16_lib.dir/MinesweeperBoard.cpp.s
 .PHONY : MinesweeperBoard.cpp.s
 
 main.obj: main.cpp.obj
@@ -221,8 +221,8 @@ main.obj: main.cpp.obj
 
 # target to build an object file
 main.cpp.obj:
-	cd /d C:\Users\48660\CLionProjects\Saper\cmake-build-debug && $(MAKE) -f src\CMakeFiles\try_v16_run.dir\build.make src/CMakeFiles/try_v16_run.dir/main.cpp.obj
-	cd /d C:\Users\48660\CLionProjects\Saper\cmake-build-debug && $(MAKE) -f src\CMakeFiles\try_v16_lib.dir\build.make src/CMakeFiles/try_v16_lib.dir/main.cpp.obj
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug && $(MAKE) -f src\CMakeFiles\try_v16_run.dir\build.make src/CMakeFiles/try_v16_run.dir/main.cpp.obj
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug && $(MAKE) -f src\CMakeFiles\try_v16_lib.dir\build.make src/CMakeFiles/try_v16_lib.dir/main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -231,8 +231,8 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /d C:\Users\48660\CLionProjects\Saper\cmake-build-debug && $(MAKE) -f src\CMakeFiles\try_v16_run.dir\build.make src/CMakeFiles/try_v16_run.dir/main.cpp.i
-	cd /d C:\Users\48660\CLionProjects\Saper\cmake-build-debug && $(MAKE) -f src\CMakeFiles\try_v16_lib.dir\build.make src/CMakeFiles/try_v16_lib.dir/main.cpp.i
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug && $(MAKE) -f src\CMakeFiles\try_v16_run.dir\build.make src/CMakeFiles/try_v16_run.dir/main.cpp.i
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug && $(MAKE) -f src\CMakeFiles\try_v16_lib.dir\build.make src/CMakeFiles/try_v16_lib.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -241,8 +241,8 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /d C:\Users\48660\CLionProjects\Saper\cmake-build-debug && $(MAKE) -f src\CMakeFiles\try_v16_run.dir\build.make src/CMakeFiles/try_v16_run.dir/main.cpp.s
-	cd /d C:\Users\48660\CLionProjects\Saper\cmake-build-debug && $(MAKE) -f src\CMakeFiles\try_v16_lib.dir\build.make src/CMakeFiles/try_v16_lib.dir/main.cpp.s
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug && $(MAKE) -f src\CMakeFiles\try_v16_run.dir\build.make src/CMakeFiles/try_v16_run.dir/main.cpp.s
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug && $(MAKE) -f src\CMakeFiles\try_v16_lib.dir\build.make src/CMakeFiles/try_v16_lib.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -276,6 +276,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\Users\48660\CLionProjects\Saper\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

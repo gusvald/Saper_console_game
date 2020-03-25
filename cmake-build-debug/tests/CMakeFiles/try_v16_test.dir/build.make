@@ -42,10 +42,10 @@ RM = "C:\Program Files\JetBrains\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\48660\CLionProjects\Saper
+CMAKE_SOURCE_DIR = C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\48660\CLionProjects\Saper\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include tests/CMakeFiles/try_v16_test.dir/depend.make
@@ -59,30 +59,30 @@ include tests/CMakeFiles/try_v16_test.dir/flags.make
 tests/CMakeFiles/try_v16_test.dir/board_unittest.cpp.obj: tests/CMakeFiles/try_v16_test.dir/flags.make
 tests/CMakeFiles/try_v16_test.dir/board_unittest.cpp.obj: tests/CMakeFiles/try_v16_test.dir/includes_CXX.rsp
 tests/CMakeFiles/try_v16_test.dir/board_unittest.cpp.obj: ../tests/board_unittest.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\48660\CLionProjects\Saper\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tests/CMakeFiles/try_v16_test.dir/board_unittest.cpp.obj"
-	cd /d C:\Users\48660\CLionProjects\Saper\cmake-build-debug\tests && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\try_v16_test.dir\board_unittest.cpp.obj -c C:\Users\48660\CLionProjects\Saper\tests\board_unittest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tests/CMakeFiles/try_v16_test.dir/board_unittest.cpp.obj"
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug\tests && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\try_v16_test.dir\board_unittest.cpp.obj -c C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\tests\board_unittest.cpp
 
 tests/CMakeFiles/try_v16_test.dir/board_unittest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/try_v16_test.dir/board_unittest.cpp.i"
-	cd /d C:\Users\48660\CLionProjects\Saper\cmake-build-debug\tests && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\48660\CLionProjects\Saper\tests\board_unittest.cpp > CMakeFiles\try_v16_test.dir\board_unittest.cpp.i
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug\tests && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\tests\board_unittest.cpp > CMakeFiles\try_v16_test.dir\board_unittest.cpp.i
 
 tests/CMakeFiles/try_v16_test.dir/board_unittest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/try_v16_test.dir/board_unittest.cpp.s"
-	cd /d C:\Users\48660\CLionProjects\Saper\cmake-build-debug\tests && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\48660\CLionProjects\Saper\tests\board_unittest.cpp -o CMakeFiles\try_v16_test.dir\board_unittest.cpp.s
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug\tests && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\tests\board_unittest.cpp -o CMakeFiles\try_v16_test.dir\board_unittest.cpp.s
 
 tests/CMakeFiles/try_v16_test.dir/main.cpp.obj: tests/CMakeFiles/try_v16_test.dir/flags.make
 tests/CMakeFiles/try_v16_test.dir/main.cpp.obj: tests/CMakeFiles/try_v16_test.dir/includes_CXX.rsp
 tests/CMakeFiles/try_v16_test.dir/main.cpp.obj: ../tests/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\48660\CLionProjects\Saper\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object tests/CMakeFiles/try_v16_test.dir/main.cpp.obj"
-	cd /d C:\Users\48660\CLionProjects\Saper\cmake-build-debug\tests && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\try_v16_test.dir\main.cpp.obj -c C:\Users\48660\CLionProjects\Saper\tests\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object tests/CMakeFiles/try_v16_test.dir/main.cpp.obj"
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug\tests && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\try_v16_test.dir\main.cpp.obj -c C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\tests\main.cpp
 
 tests/CMakeFiles/try_v16_test.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/try_v16_test.dir/main.cpp.i"
-	cd /d C:\Users\48660\CLionProjects\Saper\cmake-build-debug\tests && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\48660\CLionProjects\Saper\tests\main.cpp > CMakeFiles\try_v16_test.dir\main.cpp.i
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug\tests && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\tests\main.cpp > CMakeFiles\try_v16_test.dir\main.cpp.i
 
 tests/CMakeFiles/try_v16_test.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/try_v16_test.dir/main.cpp.s"
-	cd /d C:\Users\48660\CLionProjects\Saper\cmake-build-debug\tests && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\48660\CLionProjects\Saper\tests\main.cpp -o CMakeFiles\try_v16_test.dir\main.cpp.s
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug\tests && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\tests\main.cpp -o CMakeFiles\try_v16_test.dir\main.cpp.s
 
 # Object files for target try_v16_test
 try_v16_test_OBJECTS = \
@@ -100,8 +100,8 @@ tests/try_v16_test.exe: lib/libgtestd.a
 tests/try_v16_test.exe: tests/CMakeFiles/try_v16_test.dir/linklibs.rsp
 tests/try_v16_test.exe: tests/CMakeFiles/try_v16_test.dir/objects1.rsp
 tests/try_v16_test.exe: tests/CMakeFiles/try_v16_test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\48660\CLionProjects\Saper\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable try_v16_test.exe"
-	cd /d C:\Users\48660\CLionProjects\Saper\cmake-build-debug\tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\try_v16_test.dir\link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable try_v16_test.exe"
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug\tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\try_v16_test.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 tests/CMakeFiles/try_v16_test.dir/build: tests/try_v16_test.exe
@@ -109,10 +109,10 @@ tests/CMakeFiles/try_v16_test.dir/build: tests/try_v16_test.exe
 .PHONY : tests/CMakeFiles/try_v16_test.dir/build
 
 tests/CMakeFiles/try_v16_test.dir/clean:
-	cd /d C:\Users\48660\CLionProjects\Saper\cmake-build-debug\tests && $(CMAKE_COMMAND) -P CMakeFiles\try_v16_test.dir\cmake_clean.cmake
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug\tests && $(CMAKE_COMMAND) -P CMakeFiles\try_v16_test.dir\cmake_clean.cmake
 .PHONY : tests/CMakeFiles/try_v16_test.dir/clean
 
 tests/CMakeFiles/try_v16_test.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\48660\CLionProjects\Saper C:\Users\48660\CLionProjects\Saper\tests C:\Users\48660\CLionProjects\Saper\cmake-build-debug C:\Users\48660\CLionProjects\Saper\cmake-build-debug\tests C:\Users\48660\CLionProjects\Saper\cmake-build-debug\tests\CMakeFiles\try_v16_test.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\tests C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug\tests C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug\tests\CMakeFiles\try_v16_test.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : tests/CMakeFiles/try_v16_test.dir/depend
 

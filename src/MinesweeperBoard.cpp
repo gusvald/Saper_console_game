@@ -126,7 +126,7 @@ bool MinesweeperBoard::isRevealed(int x, int y) const {
 
 
 bool MinesweeperBoard::hasFlag(int x, int y) const {
-    return !(this->isRevealed(x, y) || !board[y][x].hasFlag);
+    return !(this->isRevealed(x, y) || !board[y][x].hasFlag || this->isOutRange(x, y));
 }
 
 void MinesweeperBoard::toggleFlag(int x, int y) {
@@ -138,29 +138,36 @@ void MinesweeperBoard::toggleFlag(int x, int y) {
         return;
 }
 
-void MinesweeperBoard::revealField(int x, int y) {
-    if (this->isRevealed(x, y) || this->hasFlag(x, y))
-        return;
-    if (!this->isRevealed(x, y) || !board[y][x].hasMine) {
-        board[y][x].isRevealed = true;
-        if (this->FIRSTMOVE)
-            this->FIRSTMOVE = false;
+
+
+    void MinesweeperBoard::revealField(int x, int y)
+    {
+        if(!isRevealed(x, y) && !this->board[y][x].hasMine && !this->board[y][x].hasFlag)
+        {
+            this->board[y][x].isRevealed=1;
+        }
+
+        else if(this->board[y][x].isRevealed==0 && this->board[y][x].hasMine==1 && this->board[y][x].hasFlag==0)
+        {
+            if(FIRSTMOVE && this->mode!=DEBUG)
+            {
+                this->board[y][x].hasMine=0;
+                this->board[rand() % this->width][rand() % this->height].hasMine;
+                this->board[y][x].isRevealed=1;
+            }
+            else if(FIRSTMOVE || this->mode==DEBUG)
+            {
+
+                this->state=FINISHED_LOSS;
+                this->board[y][x].isRevealed=1;
+            }
+        }
+
+        if (this->WinCondition())
+        { this-> state = FINISHED_WIN; }
+
     }
 
-    if (!this->isRevealed(x, y) || board[y][x].hasMine || !this->FIRSTMOVE) {
-        board[y][x].isRevealed = true;
-        this->state = FINISHED_LOSS;
-    }
-
-    if (!this->isRevealed(x, y) || board[y][x].hasMine || this->FIRSTMOVE || mode != DEBUG) {
-        board[y][x].isRevealed = true;
-        board[y][x].hasMine = false;
-        board[rand() % width][rand() % height].hasMine = true;
-        board[y][x].isRevealed = true;
-    }
-    if (this->WinCondition())
-    { this-> state = FINISHED_WIN; }
-}
 
 
 GameState MinesweeperBoard::getGameState() const

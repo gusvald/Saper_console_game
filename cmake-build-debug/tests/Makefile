@@ -47,10 +47,10 @@ RM = "C:\Program Files\JetBrains\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\48660\CLionProjects\Saper
+CMAKE_SOURCE_DIR = C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\48660\CLionProjects\Saper\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -125,14 +125,14 @@ list_install_components/fast: list_install_components
 
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\Users\48660\CLionProjects\Saper\cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\48660\CLionProjects\Saper\cmake-build-debug\CMakeFiles C:\Users\48660\CLionProjects\Saper\cmake-build-debug\tests\CMakeFiles\progress.marks
-	cd /d C:\Users\48660\CLionProjects\Saper\cmake-build-debug && $(MAKE) -f CMakeFiles\Makefile2 tests/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\48660\CLionProjects\Saper\cmake-build-debug\CMakeFiles 0
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug\CMakeFiles C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug\tests\CMakeFiles\progress.marks
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug && $(MAKE) -f CMakeFiles\Makefile2 tests/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d C:\Users\48660\CLionProjects\Saper\cmake-build-debug && $(MAKE) -f CMakeFiles\Makefile2 tests/clean
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug && $(MAKE) -f CMakeFiles\Makefile2 tests/clean
 .PHONY : clean
 
 # The main clean target
@@ -142,22 +142,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\Users\48660\CLionProjects\Saper\cmake-build-debug && $(MAKE) -f CMakeFiles\Makefile2 tests/preinstall
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug && $(MAKE) -f CMakeFiles\Makefile2 tests/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\Users\48660\CLionProjects\Saper\cmake-build-debug && $(MAKE) -f CMakeFiles\Makefile2 tests/preinstall
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug && $(MAKE) -f CMakeFiles\Makefile2 tests/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\Users\48660\CLionProjects\Saper\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 tests/CMakeFiles/try_v16_test.dir/rule:
-	cd /d C:\Users\48660\CLionProjects\Saper\cmake-build-debug && $(MAKE) -f CMakeFiles\Makefile2 tests/CMakeFiles/try_v16_test.dir/rule
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug && $(MAKE) -f CMakeFiles\Makefile2 tests/CMakeFiles/try_v16_test.dir/rule
 .PHONY : tests/CMakeFiles/try_v16_test.dir/rule
 
 # Convenience name for target.
@@ -167,7 +167,7 @@ try_v16_test: tests/CMakeFiles/try_v16_test.dir/rule
 
 # fast build rule for target.
 try_v16_test/fast:
-	cd /d C:\Users\48660\CLionProjects\Saper\cmake-build-debug && $(MAKE) -f tests\CMakeFiles\try_v16_test.dir\build.make tests/CMakeFiles/try_v16_test.dir/build
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug && $(MAKE) -f tests\CMakeFiles\try_v16_test.dir\build.make tests/CMakeFiles/try_v16_test.dir/build
 .PHONY : try_v16_test/fast
 
 board_unittest.obj: board_unittest.cpp.obj
@@ -176,7 +176,7 @@ board_unittest.obj: board_unittest.cpp.obj
 
 # target to build an object file
 board_unittest.cpp.obj:
-	cd /d C:\Users\48660\CLionProjects\Saper\cmake-build-debug && $(MAKE) -f tests\CMakeFiles\try_v16_test.dir\build.make tests/CMakeFiles/try_v16_test.dir/board_unittest.cpp.obj
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug && $(MAKE) -f tests\CMakeFiles\try_v16_test.dir\build.make tests/CMakeFiles/try_v16_test.dir/board_unittest.cpp.obj
 .PHONY : board_unittest.cpp.obj
 
 board_unittest.i: board_unittest.cpp.i
@@ -185,7 +185,7 @@ board_unittest.i: board_unittest.cpp.i
 
 # target to preprocess a source file
 board_unittest.cpp.i:
-	cd /d C:\Users\48660\CLionProjects\Saper\cmake-build-debug && $(MAKE) -f tests\CMakeFiles\try_v16_test.dir\build.make tests/CMakeFiles/try_v16_test.dir/board_unittest.cpp.i
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug && $(MAKE) -f tests\CMakeFiles\try_v16_test.dir\build.make tests/CMakeFiles/try_v16_test.dir/board_unittest.cpp.i
 .PHONY : board_unittest.cpp.i
 
 board_unittest.s: board_unittest.cpp.s
@@ -194,7 +194,7 @@ board_unittest.s: board_unittest.cpp.s
 
 # target to generate assembly for a file
 board_unittest.cpp.s:
-	cd /d C:\Users\48660\CLionProjects\Saper\cmake-build-debug && $(MAKE) -f tests\CMakeFiles\try_v16_test.dir\build.make tests/CMakeFiles/try_v16_test.dir/board_unittest.cpp.s
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug && $(MAKE) -f tests\CMakeFiles\try_v16_test.dir\build.make tests/CMakeFiles/try_v16_test.dir/board_unittest.cpp.s
 .PHONY : board_unittest.cpp.s
 
 main.obj: main.cpp.obj
@@ -203,7 +203,7 @@ main.obj: main.cpp.obj
 
 # target to build an object file
 main.cpp.obj:
-	cd /d C:\Users\48660\CLionProjects\Saper\cmake-build-debug && $(MAKE) -f tests\CMakeFiles\try_v16_test.dir\build.make tests/CMakeFiles/try_v16_test.dir/main.cpp.obj
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug && $(MAKE) -f tests\CMakeFiles\try_v16_test.dir\build.make tests/CMakeFiles/try_v16_test.dir/main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -212,7 +212,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /d C:\Users\48660\CLionProjects\Saper\cmake-build-debug && $(MAKE) -f tests\CMakeFiles\try_v16_test.dir\build.make tests/CMakeFiles/try_v16_test.dir/main.cpp.i
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug && $(MAKE) -f tests\CMakeFiles\try_v16_test.dir\build.make tests/CMakeFiles/try_v16_test.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -221,7 +221,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /d C:\Users\48660\CLionProjects\Saper\cmake-build-debug && $(MAKE) -f tests\CMakeFiles\try_v16_test.dir\build.make tests/CMakeFiles/try_v16_test.dir/main.cpp.s
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug && $(MAKE) -f tests\CMakeFiles\try_v16_test.dir\build.make tests/CMakeFiles/try_v16_test.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -254,6 +254,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\Users\48660\CLionProjects\Saper\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/48660/CLionProjects/Saper/tests
+# Install script for directory: C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/tests
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

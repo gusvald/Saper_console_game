@@ -6,8 +6,8 @@ include(ExternalProject)
 ExternalProject_Add(googletest
   GIT_REPOSITORY    https://github.com/google/googletest.git
   GIT_TAG           master
-  SOURCE_DIR        "C:/Users/48660/CLionProjects/Saper/cmake-build-debug/tests/googletest-src"
-  BINARY_DIR        "C:/Users/48660/CLionProjects/Saper/cmake-build-debug/tests/googletest-build"
+  SOURCE_DIR        "C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/cmake-build-debug/tests/googletest-src"
+  BINARY_DIR        "C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/cmake-build-debug/tests/googletest-build"
   CONFIGURE_COMMAND ""
   BUILD_COMMAND     ""
   INSTALL_COMMAND   ""

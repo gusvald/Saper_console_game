@@ -42,10 +42,10 @@ RM = "C:\Program Files\JetBrains\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\48660\CLionProjects\Saper\cmake-build-debug\tests\googletest-download
+CMAKE_SOURCE_DIR = C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug\tests\googletest-download
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\48660\CLionProjects\Saper\cmake-build-debug\tests\googletest-download
+CMAKE_BINARY_DIR = C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug\tests\googletest-download
 
 # Utility rule file for googletest.
 
@@ -64,58 +64,58 @@ CMakeFiles/googletest-complete: googletest-prefix/src/googletest-stamp/googletes
 CMakeFiles/googletest-complete: googletest-prefix/src/googletest-stamp/googletest-build
 CMakeFiles/googletest-complete: googletest-prefix/src/googletest-stamp/googletest-install
 CMakeFiles/googletest-complete: googletest-prefix/src/googletest-stamp/googletest-test
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=C:\Users\48660\CLionProjects\Saper\cmake-build-debug\tests\googletest-download\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'googletest'"
-	"C:\Program Files\JetBrains\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E make_directory C:/Users/48660/CLionProjects/Saper/cmake-build-debug/tests/googletest-download/CMakeFiles
-	"C:\Program Files\JetBrains\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E touch C:/Users/48660/CLionProjects/Saper/cmake-build-debug/tests/googletest-download/CMakeFiles/googletest-complete
-	"C:\Program Files\JetBrains\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E touch C:/Users/48660/CLionProjects/Saper/cmake-build-debug/tests/googletest-download/googletest-prefix/src/googletest-stamp/googletest-done
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug\tests\googletest-download\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'googletest'"
+	"C:\Program Files\JetBrains\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E make_directory C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/cmake-build-debug/tests/googletest-download/CMakeFiles
+	"C:\Program Files\JetBrains\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E touch C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/cmake-build-debug/tests/googletest-download/CMakeFiles/googletest-complete
+	"C:\Program Files\JetBrains\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E touch C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/cmake-build-debug/tests/googletest-download/googletest-prefix/src/googletest-stamp/googletest-done
 
 googletest-prefix/src/googletest-stamp/googletest-install: googletest-prefix/src/googletest-stamp/googletest-build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=C:\Users\48660\CLionProjects\Saper\cmake-build-debug\tests\googletest-download\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "No install step for 'googletest'"
-	cd /d C:\Users\48660\CLionProjects\Saper\cmake-build-debug\tests\googletest-build && "C:\Program Files\JetBrains\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E echo_append
-	cd /d C:\Users\48660\CLionProjects\Saper\cmake-build-debug\tests\googletest-build && "C:\Program Files\JetBrains\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E touch C:/Users/48660/CLionProjects/Saper/cmake-build-debug/tests/googletest-download/googletest-prefix/src/googletest-stamp/googletest-install
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug\tests\googletest-download\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "No install step for 'googletest'"
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug\tests\googletest-build && "C:\Program Files\JetBrains\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E echo_append
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug\tests\googletest-build && "C:\Program Files\JetBrains\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E touch C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/cmake-build-debug/tests/googletest-download/googletest-prefix/src/googletest-stamp/googletest-install
 
 googletest-prefix/src/googletest-stamp/googletest-mkdir:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=C:\Users\48660\CLionProjects\Saper\cmake-build-debug\tests\googletest-download\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Creating directories for 'googletest'"
-	"C:\Program Files\JetBrains\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E make_directory C:/Users/48660/CLionProjects/Saper/cmake-build-debug/tests/googletest-src
-	"C:\Program Files\JetBrains\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E make_directory C:/Users/48660/CLionProjects/Saper/cmake-build-debug/tests/googletest-build
-	"C:\Program Files\JetBrains\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E make_directory C:/Users/48660/CLionProjects/Saper/cmake-build-debug/tests/googletest-download/googletest-prefix
-	"C:\Program Files\JetBrains\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E make_directory C:/Users/48660/CLionProjects/Saper/cmake-build-debug/tests/googletest-download/googletest-prefix/tmp
-	"C:\Program Files\JetBrains\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E make_directory C:/Users/48660/CLionProjects/Saper/cmake-build-debug/tests/googletest-download/googletest-prefix/src/googletest-stamp
-	"C:\Program Files\JetBrains\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E make_directory C:/Users/48660/CLionProjects/Saper/cmake-build-debug/tests/googletest-download/googletest-prefix/src
-	"C:\Program Files\JetBrains\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E make_directory C:/Users/48660/CLionProjects/Saper/cmake-build-debug/tests/googletest-download/googletest-prefix/src/googletest-stamp
-	"C:\Program Files\JetBrains\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E touch C:/Users/48660/CLionProjects/Saper/cmake-build-debug/tests/googletest-download/googletest-prefix/src/googletest-stamp/googletest-mkdir
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug\tests\googletest-download\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Creating directories for 'googletest'"
+	"C:\Program Files\JetBrains\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E make_directory C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/cmake-build-debug/tests/googletest-src
+	"C:\Program Files\JetBrains\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E make_directory C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/cmake-build-debug/tests/googletest-build
+	"C:\Program Files\JetBrains\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E make_directory C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/cmake-build-debug/tests/googletest-download/googletest-prefix
+	"C:\Program Files\JetBrains\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E make_directory C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/cmake-build-debug/tests/googletest-download/googletest-prefix/tmp
+	"C:\Program Files\JetBrains\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E make_directory C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/cmake-build-debug/tests/googletest-download/googletest-prefix/src/googletest-stamp
+	"C:\Program Files\JetBrains\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E make_directory C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/cmake-build-debug/tests/googletest-download/googletest-prefix/src
+	"C:\Program Files\JetBrains\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E make_directory C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/cmake-build-debug/tests/googletest-download/googletest-prefix/src/googletest-stamp
+	"C:\Program Files\JetBrains\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E touch C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/cmake-build-debug/tests/googletest-download/googletest-prefix/src/googletest-stamp/googletest-mkdir
 
 googletest-prefix/src/googletest-stamp/googletest-download: googletest-prefix/src/googletest-stamp/googletest-gitinfo.txt
 googletest-prefix/src/googletest-stamp/googletest-download: googletest-prefix/src/googletest-stamp/googletest-mkdir
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=C:\Users\48660\CLionProjects\Saper\cmake-build-debug\tests\googletest-download\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Performing download step (git clone) for 'googletest'"
-	cd /d C:\Users\48660\CLionProjects\Saper\cmake-build-debug\tests && "C:\Program Files\JetBrains\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -P C:/Users/48660/CLionProjects/Saper/cmake-build-debug/tests/googletest-download/googletest-prefix/tmp/googletest-gitclone.cmake
-	cd /d C:\Users\48660\CLionProjects\Saper\cmake-build-debug\tests && "C:\Program Files\JetBrains\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E touch C:/Users/48660/CLionProjects/Saper/cmake-build-debug/tests/googletest-download/googletest-prefix/src/googletest-stamp/googletest-download
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug\tests\googletest-download\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Performing download step (git clone) for 'googletest'"
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug\tests && "C:\Program Files\JetBrains\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -P C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/cmake-build-debug/tests/googletest-download/googletest-prefix/tmp/googletest-gitclone.cmake
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug\tests && "C:\Program Files\JetBrains\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E touch C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/cmake-build-debug/tests/googletest-download/googletest-prefix/src/googletest-stamp/googletest-download
 
 googletest-prefix/src/googletest-stamp/googletest-update: googletest-prefix/src/googletest-stamp/googletest-download
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=C:\Users\48660\CLionProjects\Saper\cmake-build-debug\tests\googletest-download\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Performing update step for 'googletest'"
-	cd /d C:\Users\48660\CLionProjects\Saper\cmake-build-debug\tests\googletest-src && "C:\Program Files\JetBrains\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -P C:/Users/48660/CLionProjects/Saper/cmake-build-debug/tests/googletest-download/googletest-prefix/tmp/googletest-gitupdate.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug\tests\googletest-download\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Performing update step for 'googletest'"
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug\tests\googletest-src && "C:\Program Files\JetBrains\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -P C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/cmake-build-debug/tests/googletest-download/googletest-prefix/tmp/googletest-gitupdate.cmake
 
 googletest-prefix/src/googletest-stamp/googletest-patch: googletest-prefix/src/googletest-stamp/googletest-download
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=C:\Users\48660\CLionProjects\Saper\cmake-build-debug\tests\googletest-download\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "No patch step for 'googletest'"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug\tests\googletest-download\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "No patch step for 'googletest'"
 	"C:\Program Files\JetBrains\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E echo_append
-	"C:\Program Files\JetBrains\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E touch C:/Users/48660/CLionProjects/Saper/cmake-build-debug/tests/googletest-download/googletest-prefix/src/googletest-stamp/googletest-patch
+	"C:\Program Files\JetBrains\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E touch C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/cmake-build-debug/tests/googletest-download/googletest-prefix/src/googletest-stamp/googletest-patch
 
 googletest-prefix/src/googletest-stamp/googletest-configure: googletest-prefix/tmp/googletest-cfgcmd.txt
 googletest-prefix/src/googletest-stamp/googletest-configure: googletest-prefix/src/googletest-stamp/googletest-update
 googletest-prefix/src/googletest-stamp/googletest-configure: googletest-prefix/src/googletest-stamp/googletest-patch
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=C:\Users\48660\CLionProjects\Saper\cmake-build-debug\tests\googletest-download\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No configure step for 'googletest'"
-	cd /d C:\Users\48660\CLionProjects\Saper\cmake-build-debug\tests\googletest-build && "C:\Program Files\JetBrains\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E echo_append
-	cd /d C:\Users\48660\CLionProjects\Saper\cmake-build-debug\tests\googletest-build && "C:\Program Files\JetBrains\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E touch C:/Users/48660/CLionProjects/Saper/cmake-build-debug/tests/googletest-download/googletest-prefix/src/googletest-stamp/googletest-configure
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug\tests\googletest-download\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No configure step for 'googletest'"
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug\tests\googletest-build && "C:\Program Files\JetBrains\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E echo_append
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug\tests\googletest-build && "C:\Program Files\JetBrains\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E touch C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/cmake-build-debug/tests/googletest-download/googletest-prefix/src/googletest-stamp/googletest-configure
 
 googletest-prefix/src/googletest-stamp/googletest-build: googletest-prefix/src/googletest-stamp/googletest-configure
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=C:\Users\48660\CLionProjects\Saper\cmake-build-debug\tests\googletest-download\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "No build step for 'googletest'"
-	cd /d C:\Users\48660\CLionProjects\Saper\cmake-build-debug\tests\googletest-build && "C:\Program Files\JetBrains\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E echo_append
-	cd /d C:\Users\48660\CLionProjects\Saper\cmake-build-debug\tests\googletest-build && "C:\Program Files\JetBrains\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E touch C:/Users/48660/CLionProjects/Saper/cmake-build-debug/tests/googletest-download/googletest-prefix/src/googletest-stamp/googletest-build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug\tests\googletest-download\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "No build step for 'googletest'"
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug\tests\googletest-build && "C:\Program Files\JetBrains\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E echo_append
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug\tests\googletest-build && "C:\Program Files\JetBrains\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E touch C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/cmake-build-debug/tests/googletest-download/googletest-prefix/src/googletest-stamp/googletest-build
 
 googletest-prefix/src/googletest-stamp/googletest-test: googletest-prefix/src/googletest-stamp/googletest-install
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=C:\Users\48660\CLionProjects\Saper\cmake-build-debug\tests\googletest-download\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "No test step for 'googletest'"
-	cd /d C:\Users\48660\CLionProjects\Saper\cmake-build-debug\tests\googletest-build && "C:\Program Files\JetBrains\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E echo_append
-	cd /d C:\Users\48660\CLionProjects\Saper\cmake-build-debug\tests\googletest-build && "C:\Program Files\JetBrains\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E touch C:/Users/48660/CLionProjects/Saper/cmake-build-debug/tests/googletest-download/googletest-prefix/src/googletest-stamp/googletest-test
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug\tests\googletest-download\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "No test step for 'googletest'"
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug\tests\googletest-build && "C:\Program Files\JetBrains\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E echo_append
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug\tests\googletest-build && "C:\Program Files\JetBrains\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E touch C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/cmake-build-debug/tests/googletest-download/googletest-prefix/src/googletest-stamp/googletest-test
 
 googletest: CMakeFiles/googletest
 googletest: CMakeFiles/googletest-complete
@@ -141,6 +141,6 @@ CMakeFiles/googletest.dir/clean:
 .PHONY : CMakeFiles/googletest.dir/clean
 
 CMakeFiles/googletest.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\48660\CLionProjects\Saper\cmake-build-debug\tests\googletest-download C:\Users\48660\CLionProjects\Saper\cmake-build-debug\tests\googletest-download C:\Users\48660\CLionProjects\Saper\cmake-build-debug\tests\googletest-download C:\Users\48660\CLionProjects\Saper\cmake-build-debug\tests\googletest-download C:\Users\48660\CLionProjects\Saper\cmake-build-debug\tests\googletest-download\CMakeFiles\googletest.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug\tests\googletest-download C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug\tests\googletest-download C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug\tests\googletest-download C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug\tests\googletest-download C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug\tests\googletest-download\CMakeFiles\googletest.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/googletest.dir/depend
 
