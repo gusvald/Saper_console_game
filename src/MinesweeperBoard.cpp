@@ -131,7 +131,11 @@ bool MinesweeperBoard::hasFlag(int x, int y) const {
 
 void MinesweeperBoard::toggleFlag(int x, int y) {
     if (!this->isRevealed(x, y)) {
+        if(this->board[y][x].hasFlag)
+            this->board[y][x].hasFlag = !this->board[y][x].hasFlag;
+        else
         board[y][x].hasFlag = true;
+
         if (this->FIRSTMOVE)
             this->FIRSTMOVE = false;
     } else if (this->isRevealed(x, y) || this->state != RUNNING)
