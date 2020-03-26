@@ -426,6 +426,22 @@
 		<Unit filename="C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/cmake-build-debug/tests/googletest-src/googletest/src/gtest_main.cc">
 			<Option target="gtest_main"/>
 		</Unit>
+		<Unit filename="C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/src/MSBoardTextView.cpp">
+			<Option target="try_v16_run"/>
+			<Option target="try_v16_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/src/MSBoardTextView.h">
+			<Option target="try_v16_run"/>
+			<Option target="try_v16_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/src/MSTextController.cpp">
+			<Option target="try_v16_run"/>
+			<Option target="try_v16_lib"/>
+		</Unit>
+		<Unit filename="C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/src/MSTextController.h">
+			<Option target="try_v16_run"/>
+			<Option target="try_v16_lib"/>
+		</Unit>
 		<Unit filename="C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/src/MinesweeperBoard.cpp">
 			<Option target="try_v16_run"/>
 			<Option target="try_v16_lib"/>

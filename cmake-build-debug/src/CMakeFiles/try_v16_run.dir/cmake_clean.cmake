@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/try_v16_run.dir/MSBoardTextView.cpp.obj"
+  "CMakeFiles/try_v16_run.dir/MSTextController.cpp.obj"
   "CMakeFiles/try_v16_run.dir/MinesweeperBoard.cpp.obj"
   "CMakeFiles/try_v16_run.dir/main.cpp.obj"
   "libtry_v16_run.dll.a"

@@ -144,22 +144,22 @@ void MinesweeperBoard::toggleFlag(int x, int y) {
     {
         if(!isRevealed(x, y) && !this->board[y][x].hasMine && !this->board[y][x].hasFlag)
         {
-            this->board[y][x].isRevealed=1;
+            this->board[y][x].isRevealed=true;
         }
 
-        else if(this->board[y][x].isRevealed==0 && this->board[y][x].hasMine==1 && this->board[y][x].hasFlag==0)
+        else if(!this->board[y][x].isRevealed && this->board[y][x].hasMine && !this->board[y][x].hasFlag)
         {
             if(FIRSTMOVE && this->mode!=DEBUG)
             {
-                this->board[y][x].hasMine=0;
+                this->board[y][x].hasMine=false;
                 this->board[rand() % this->width][rand() % this->height].hasMine;
-                this->board[y][x].isRevealed=1;
+                this->board[y][x].isRevealed=true;
             }
             else if(FIRSTMOVE || this->mode==DEBUG)
             {
 
                 this->state=FINISHED_LOSS;
-                this->board[y][x].isRevealed=1;
+                this->board[y][x].isRevealed=true;
             }
         }
 
@@ -177,8 +177,11 @@ GameState MinesweeperBoard::getGameState() const
 
 
 bool MinesweeperBoard::WinCondition() const {
+
     int flags = 0;
     int mines = 0;
+    int revealed = 0;
+
     for (int i = 0; i < width; i++) {
         for (int g = 0; g < height; g++) {
             if (board[g][i].hasMine && board[g][i].hasFlag) {
@@ -191,8 +194,16 @@ bool MinesweeperBoard::WinCondition() const {
         }
     }
 
-    return flags == this->getMineCount() || mines == this->getMineCount();
 
+    for (int i = 0; i < width; i++) {
+        for (int g = 0; g < height; g++) {
+            if (!board[g][i].isRevealed) {
+                revealed++;
+            }
+        }
+    }
+
+    return flags == revealed || mines == revealed;
 }
 
 

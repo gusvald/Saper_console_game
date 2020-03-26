@@ -185,6 +185,66 @@ try_v16_lib/fast:
 	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug && $(MAKE) -f src\CMakeFiles\try_v16_lib.dir\build.make src/CMakeFiles/try_v16_lib.dir/build
 .PHONY : try_v16_lib/fast
 
+MSBoardTextView.obj: MSBoardTextView.cpp.obj
+
+.PHONY : MSBoardTextView.obj
+
+# target to build an object file
+MSBoardTextView.cpp.obj:
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug && $(MAKE) -f src\CMakeFiles\try_v16_run.dir\build.make src/CMakeFiles/try_v16_run.dir/MSBoardTextView.cpp.obj
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug && $(MAKE) -f src\CMakeFiles\try_v16_lib.dir\build.make src/CMakeFiles/try_v16_lib.dir/MSBoardTextView.cpp.obj
+.PHONY : MSBoardTextView.cpp.obj
+
+MSBoardTextView.i: MSBoardTextView.cpp.i
+
+.PHONY : MSBoardTextView.i
+
+# target to preprocess a source file
+MSBoardTextView.cpp.i:
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug && $(MAKE) -f src\CMakeFiles\try_v16_run.dir\build.make src/CMakeFiles/try_v16_run.dir/MSBoardTextView.cpp.i
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug && $(MAKE) -f src\CMakeFiles\try_v16_lib.dir\build.make src/CMakeFiles/try_v16_lib.dir/MSBoardTextView.cpp.i
+.PHONY : MSBoardTextView.cpp.i
+
+MSBoardTextView.s: MSBoardTextView.cpp.s
+
+.PHONY : MSBoardTextView.s
+
+# target to generate assembly for a file
+MSBoardTextView.cpp.s:
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug && $(MAKE) -f src\CMakeFiles\try_v16_run.dir\build.make src/CMakeFiles/try_v16_run.dir/MSBoardTextView.cpp.s
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug && $(MAKE) -f src\CMakeFiles\try_v16_lib.dir\build.make src/CMakeFiles/try_v16_lib.dir/MSBoardTextView.cpp.s
+.PHONY : MSBoardTextView.cpp.s
+
+MSTextController.obj: MSTextController.cpp.obj
+
+.PHONY : MSTextController.obj
+
+# target to build an object file
+MSTextController.cpp.obj:
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug && $(MAKE) -f src\CMakeFiles\try_v16_run.dir\build.make src/CMakeFiles/try_v16_run.dir/MSTextController.cpp.obj
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug && $(MAKE) -f src\CMakeFiles\try_v16_lib.dir\build.make src/CMakeFiles/try_v16_lib.dir/MSTextController.cpp.obj
+.PHONY : MSTextController.cpp.obj
+
+MSTextController.i: MSTextController.cpp.i
+
+.PHONY : MSTextController.i
+
+# target to preprocess a source file
+MSTextController.cpp.i:
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug && $(MAKE) -f src\CMakeFiles\try_v16_run.dir\build.make src/CMakeFiles/try_v16_run.dir/MSTextController.cpp.i
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug && $(MAKE) -f src\CMakeFiles\try_v16_lib.dir\build.make src/CMakeFiles/try_v16_lib.dir/MSTextController.cpp.i
+.PHONY : MSTextController.cpp.i
+
+MSTextController.s: MSTextController.cpp.s
+
+.PHONY : MSTextController.s
+
+# target to generate assembly for a file
+MSTextController.cpp.s:
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug && $(MAKE) -f src\CMakeFiles\try_v16_run.dir\build.make src/CMakeFiles/try_v16_run.dir/MSTextController.cpp.s
+	cd /d C:\Users\48660\CLionProjects\Saper_Projekt_Gusvald\cmake-build-debug && $(MAKE) -f src\CMakeFiles\try_v16_lib.dir\build.make src/CMakeFiles/try_v16_lib.dir/MSTextController.cpp.s
+.PHONY : MSTextController.cpp.s
+
 MinesweeperBoard.obj: MinesweeperBoard.cpp.obj
 
 .PHONY : MinesweeperBoard.obj
@@ -259,6 +319,12 @@ help:
 	@echo ... try_v16_lib
 	@echo ... rebuild_cache
 	@echo ... install/strip
+	@echo ... MSBoardTextView.obj
+	@echo ... MSBoardTextView.i
+	@echo ... MSBoardTextView.s
+	@echo ... MSTextController.obj
+	@echo ... MSTextController.i
+	@echo ... MSTextController.s
 	@echo ... MinesweeperBoard.obj
 	@echo ... MinesweeperBoard.i
 	@echo ... MinesweeperBoard.s

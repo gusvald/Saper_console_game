@@ -14,10 +14,6 @@ gtest/gtest.h
 ../src/MinesweeperBoard.h
 C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/src/MinesweeperBoard.h
 
-C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/tests/main.cpp
-gtest/gtest.h
-C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/tests/gtest/gtest.h
-
 tests/googletest-src/googletest/include/gtest/gtest-death-test.h
 gtest/internal/gtest-death-test-internal.h
 tests/googletest-src/googletest/include/gtest/gtest/internal/gtest-death-test-internal.h

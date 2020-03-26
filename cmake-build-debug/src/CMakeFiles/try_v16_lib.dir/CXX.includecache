@@ -6,6 +6,32 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/src/MSBoardTextView.cpp
+iostream
+-
+MSBoardTextView.h
+C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/src/MSBoardTextView.h
+
+C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/src/MSBoardTextView.h
+MinesweeperBoard.h
+C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/src/MinesweeperBoard.h
+iostream
+-
+
+C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/src/MSTextController.cpp
+MSTextController.h
+C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/src/MSTextController.h
+iostream
+-
+
+C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/src/MSTextController.h
+MSBoardTextView.h
+C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/src/MSBoardTextView.h
+MinesweeperBoard.h
+C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/src/MinesweeperBoard.h
+iostream
+-
+
 C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/src/MinesweeperBoard.cpp
 iostream
 -
@@ -13,4 +39,16 @@ MinesweeperBoard.h
 C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/src/MinesweeperBoard.h
 
 C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/src/MinesweeperBoard.h
+
+C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/src/main.cpp
+MinesweeperBoard.h
+C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/src/MinesweeperBoard.h
+MSBoardTextView.h
+C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/src/MSBoardTextView.h
+MSTextController.h
+C:/Users/48660/CLionProjects/Saper_Projekt_Gusvald/src/MSTextController.h
+cstdlib
+-
+ctime
+-
 
