@@ -17,7 +17,7 @@ void MSTextController::play()
         do{
             if(!correct_value)
                 std::cout << "Incorect x,y try another:  ";
-            std::cin >> x >> y;
+            std::cin >> y >> x;
             correct_value = false;
         }while(x < 0 || x >= board.getBoardWidth() || y < 0 || y >= board.getBoardHeight());
 

@@ -8,7 +8,7 @@
 int main()
 {
     srand( time( nullptr ) );
-    MinesweeperBoard board (9, 7, GameMode::DEBUG);
+    MinesweeperBoard board (4, 4, GameMode::HARD);
     MSBoardTextView view ( board );
     MSTextController ctrl ( board, view );
     ctrl.play();
@@ -16,12 +16,3 @@ int main()
 
 
 
-/*
- *     MinesweeperBoard board (9, 7, GameMode::DEBUG);
-    MSBoardTextView view ( board );
-    view.display();
-    board.revealField(0,5);
-    view.display();
-    board.revealField(0,0);
-    view.display();
- */
