@@ -1,2 +1,0 @@
-C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\ar.exe qc libtry_v16_lib.a  CMakeFiles/try_v16_lib.dir/MSBoardTextView.cpp.obj CMakeFiles/try_v16_lib.dir/MSTextController.cpp.obj CMakeFiles/try_v16_lib.dir/MinesweeperBoard.cpp.obj CMakeFiles/try_v16_lib.dir/main.cpp.obj
-C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\ranlib.exe libtry_v16_lib.a
