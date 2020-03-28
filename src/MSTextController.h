@@ -12,6 +12,7 @@ public:
 private:
     MinesweeperBoard& board;
     MSBoardTextView& view;
+    int getInteger(const std::string& name) const;
 };
 
 

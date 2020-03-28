@@ -6,10 +6,13 @@
 
 class MSBoardTextView {
 public:
-        explicit MSBoardTextView(MinesweeperBoard& board);
-        void display() const;
+    explicit MSBoardTextView(MinesweeperBoard &board);
+
+    void display() const;
+
 private:
-    MinesweeperBoard& board;
+    MinesweeperBoard &board;
+
     std::string getGamestate() const;
 };
 

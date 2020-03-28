@@ -18,10 +18,10 @@ class MinesweeperBoard
     Field board[100][100];
     int width;
     int height;
+    GameMode mode;
+    GameState state;
     int MineQuantity;
     bool FIRSTMOVE = true;
-    GameState state;
-    GameMode mode;
     void display_Field(Field) const;
     bool isOutRange(int x, int y) const;
     bool WinCondition() const;
@@ -37,8 +37,6 @@ public:
     bool isRevealed(int x, int y) const;
     GameState getGameState() const;
     char getFieldInfo(int x, int y) const;
-
-
     void debug_display() const;
 };
 
