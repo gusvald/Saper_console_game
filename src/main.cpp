@@ -7,7 +7,7 @@
 
 int main() {
     srand(time(nullptr));
-    MinesweeperBoard board(4, 4, GameMode::HARD);
+    MinesweeperBoard board(3, 3, GameMode::HARD);
     MSBoardTextView view(board);
     MSTextController ctrl(board, view);
     ctrl.play();

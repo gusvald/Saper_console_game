@@ -2,7 +2,7 @@
 #include "MinesweeperBoard.h"
 
 MinesweeperBoard::MinesweeperBoard(int width, int height, GameMode mode):
-width(width), height(height), mode(mode), state(RUNNING)
+width(width), height(height), mode(mode), state(RUNNING), FIRSTMOVE(1)
 {
 
     this->width = width;
@@ -149,6 +149,8 @@ void MinesweeperBoard::toggleFlag(int x, int y) {
         if(!isRevealed(x, y) && !this->board[y][x].hasMine && !this->board[y][x].hasFlag)
         {
             this->board[y][x].isRevealed=true;
+            if (this->FIRSTMOVE)
+                this->FIRSTMOVE = false;
         }
 
         else if(!this->board[y][x].isRevealed && this->board[y][x].hasMine && !this->board[y][x].hasFlag)
@@ -158,8 +160,10 @@ void MinesweeperBoard::toggleFlag(int x, int y) {
                 this->board[y][x].hasMine=false;
                 this->board[rand() % this->width][rand() % this->height].hasMine;
                 this->board[y][x].isRevealed=true;
+                if (this->FIRSTMOVE)
+                    this->FIRSTMOVE = false;
             }
-            else if(FIRSTMOVE || this->mode==DEBUG)
+            else if(!FIRSTMOVE || this->mode==DEBUG)
             {
 
                 this->state=FINISHED_LOSS;
